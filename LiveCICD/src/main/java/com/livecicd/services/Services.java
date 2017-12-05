@@ -14,7 +14,7 @@ import com.livecicd.utilities.Utilities;
 public class Services {
 	private static final String errMsg = "Invalid Zip Code!";
 
-	// example request: http://localhost:8080/services/weatherApp?zipCode=30032
+	// example request: http://localhost:8080/zaysServices/weatherApp?zipCode=30032
 	@RequestMapping(value = "/weatherApp", method = RequestMethod.GET, produces = "application/json; charset=UTF-8")
 	public ResponseMsgs weatherApp(@RequestParam(value = "zipCode", required = true) String zipCode) throws Exception {
 		if (Utilities.validateZip(zipCode)) {
