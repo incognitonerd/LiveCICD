@@ -37,15 +37,17 @@ public class Utilities {
 	public static Results fetchLatAndLong(String zipCode){
 		String url = "http://maps.googleapis.com/maps/api/geocode/json?address=" + zipCode;
 		RestTemplate rt = new RestTemplate();
-		ZipCodeResponse response1 = null;
+		ZipCodeResponse response = null;
 		Boolean lock = true;
 		while(lock){
-			response1 = rt.getForObject(url, ZipCodeResponse.class);
-			lock = false;
+			response = rt.getForObject(url, ZipCodeResponse.class);
+			if(response != null){
+				lock = false;
+			}
 		}
-		log.info("Status : " + response1.getStatus());
-		if(response1.getStatus().equals("OK")){
-			for(Results result: response1.getResults()){
+		log.info("Status : " + response.getStatus());
+		if(response.getStatus().equals("OK")){
+			for(Results result: response.getResults()){
 				return result;
 			}
 		}
@@ -62,7 +64,9 @@ public class Utilities {
 		Boolean lock = true;
 		while(lock){
 			wr = rt.getForObject(url, WeatherResponse.class);
-			lock = false;
+			if(wr != null){
+				lock = false;
+			}
 		}
 		log.info(wr.toString());
 		return wr;
