@@ -1,6 +1,8 @@
-package com.livecicd.attributes;
+package junit.com.livecicd.attributes;
 import junit.framework.TestCase;
 import org.junit.Test;
+import com.livecicd.attributes.Geometry;
+import com.livecicd.attributes.Results;
 import com.livecicd.utilities.Constants;
 
 public class ResultsTest extends TestCase {

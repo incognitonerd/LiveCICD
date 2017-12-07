@@ -1,6 +1,7 @@
-package com.livecicd.attributes;
+package junit.com.livecicd.attributes;
 import junit.framework.TestCase;
 import org.junit.Test;
+import com.livecicd.attributes.Currently;
 import com.livecicd.utilities.Constants;
 
 public class CurrentlyTest extends TestCase {

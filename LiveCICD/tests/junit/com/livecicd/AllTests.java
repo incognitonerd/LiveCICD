@@ -1,15 +1,15 @@
-package com.livecicd;
+package junit.com.livecicd;
+import junit.com.livecicd.attributes.CurrentlyTest;
+import junit.com.livecicd.attributes.GeometryTest;
+import junit.com.livecicd.attributes.LocationTest;
+import junit.com.livecicd.attributes.ResultsTest;
+import junit.com.livecicd.responseDTOs.ResponseMsgsTest;
+import junit.com.livecicd.responseDTOs.WeatherResponseTest;
+import junit.com.livecicd.responseDTOs.ZipCodeResponseTest;
+import junit.com.livecicd.services.ServicesTest;
+import junit.com.livecicd.utilities.UtilitiesTest;
 import junit.framework.Test;
 import junit.framework.TestSuite;
-import com.livecicd.attributes.CurrentlyTest;
-import com.livecicd.attributes.GeometryTest;
-import com.livecicd.attributes.LocationTest;
-import com.livecicd.attributes.ResultsTest;
-import com.livecicd.responseDTOs.ResponseMsgsTest;
-import com.livecicd.responseDTOs.WeatherResponseTest;
-import com.livecicd.responseDTOs.ZipCodeResponseTest;
-import com.livecicd.services.ServicesTest;
-import com.livecicd.utilities.UtilitiesTest;
 
 public class AllTests {
 	public static Test suite(){

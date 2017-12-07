@@ -1,7 +1,8 @@
-package com.livecicd.services;
+package junit.com.livecicd.services;
 import junit.framework.TestCase;
 import org.junit.Test;
 import com.livecicd.responseDTOs.ResponseMsgs;
+import com.livecicd.services.Services;
 import com.livecicd.utilities.Constants;
 
 public class ServicesTest extends TestCase {

@@ -1,7 +1,8 @@
-package com.livecicd.responseDTOs;
+package junit.com.livecicd.responseDTOs;
 import junit.framework.TestCase;
 import org.junit.Test;
 import com.livecicd.attributes.Results;
+import com.livecicd.responseDTOs.ZipCodeResponse;
 import com.livecicd.utilities.Constants;
 
 public class ZipCodeResponseTest extends TestCase {

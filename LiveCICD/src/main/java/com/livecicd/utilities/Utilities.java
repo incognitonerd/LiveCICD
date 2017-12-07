@@ -82,9 +82,9 @@ public class Utilities {
 				throw new FileNotFoundException("property file '" + configFile + "' not found in the classpath");
 			}
 			apiKey = prop.getProperty("apiKey");
-			System.out.println("Api Key - " + apiKey);
+			log.info("Api Key - " + apiKey);
 		} catch(Exception e){
-			System.out.println("Exception: " + e);
+			log.info("Exception: " + e);
 		} finally{
 			configFile.close();
 		}

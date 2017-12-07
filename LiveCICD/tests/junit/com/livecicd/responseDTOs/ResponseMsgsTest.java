@@ -1,6 +1,7 @@
-package com.livecicd.responseDTOs;
+package junit.com.livecicd.responseDTOs;
 import junit.framework.TestCase;
 import org.junit.Test;
+import com.livecicd.responseDTOs.ResponseMsgs;
 import com.livecicd.utilities.Constants;
 
 public class ResponseMsgsTest extends TestCase {

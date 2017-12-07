@@ -1,7 +1,8 @@
-package com.livecicd.responseDTOs;
+package junit.com.livecicd.responseDTOs;
 import junit.framework.TestCase;
 import org.junit.Test;
 import com.livecicd.attributes.Currently;
+import com.livecicd.responseDTOs.WeatherResponse;
 
 public class WeatherResponseTest extends TestCase {
 	@Test

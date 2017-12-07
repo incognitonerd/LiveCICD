@@ -1,6 +1,8 @@
-package com.livecicd.utilities;
+package junit.com.livecicd.utilities;
 import junit.framework.TestCase;
 import org.junit.Test;
+import com.livecicd.utilities.Constants;
+import com.livecicd.utilities.Utilities;
 
 public class UtilitiesTest extends TestCase {
 	@Test
