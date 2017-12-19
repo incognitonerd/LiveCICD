@@ -17,5 +17,6 @@ public class WeatherResponse {
 
 	public void setCurrently(Currently currently) {
 		this.currently = currently;
+		System.out.println("hey george");
 	}
 }
