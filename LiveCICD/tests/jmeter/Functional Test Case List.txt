@@ -1,9 +1,0 @@
-1. Is Order Ready to Ship
-
-2. Line Items
-
-3. PO ID List
-
-4. PO Details
-
-5. DO Details By TC_OrderId_List
