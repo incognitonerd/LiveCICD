@@ -1,4 +1,5 @@
 package junit.com.weatherapp.utilities;
+import java.util.Date;
 import junit.framework.TestCase;
 import org.junit.Test;
 import com.weatherapp.utilities.Constants;
@@ -13,7 +14,9 @@ public class UtilitiesTest extends TestCase {
 	
 	@Test
 	public void testGetTime(){
-		assertEquals(Constants.DATE_TESTER, Utilities.getTime(Constants.LONG_TESTER));
+		long currentTime = System.currentTimeMillis();
+		Date d = new Date(currentTime * 1000);
+		assertEquals(d.toString(), Utilities.getTime(currentTime));
 	}
 	/*
 	 * @Test public void testFetchLatAndLong(){ assertNull(Utilities.fetchLatAndLong(Constants.INVALID_ZIP_CODE_TESTER)); assertTrue(Utilities.fetchLatAndLong(Constants.INVALID_ZIP_CODE_TESTER) instanceof Results);
