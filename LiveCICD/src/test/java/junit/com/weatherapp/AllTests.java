@@ -21,7 +21,7 @@ public class AllTests {
 		ts.addTestSuite(ResponseMsgsTest.class);
 		ts.addTestSuite(WeatherResponseTest.class);
 		ts.addTestSuite(ZipCodeResponseTest.class);
-		ts.addTestSuite(ServicesTest.class);
+		//ts.addTestSuite(ServicesTest.class);
 		ts.addTestSuite(UtilitiesTest.class);
 		return ts;
 	}
