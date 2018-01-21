@@ -236,7 +236,7 @@
         <hashTree/>
         <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="ValidateFieldsAssertion" enabled="true">
           <collectionProp name="Asserion.test_strings">
-            <stringProp name="-1064996079">msgzay</stringProp>
+            <stringProp name="108417">msg</stringProp>
             <stringProp name="3076014">date</stringProp>
             <stringProp name="3053931">city</stringProp>
             <stringProp name="3556308">temp</stringProp>
