@@ -16,7 +16,7 @@ I believe that's the meat and potatoes to my pipeline. If you have any other que
 
 In order for this app to work, you must create a DarkSky account for an api key, and supply it to the Utilities class in the utilities package. I have removed my api key for the DarkSky web service call, so it will throw a 404 error without this key.
 
-Best, 
+Best,   
 Zay
 
 
