@@ -46,7 +46,9 @@ public class Utilities {
 			Boolean lock = true;
 			while (lock) {
 				response = rt.getForObject(url, ZipCodeResponse.class);
-				if (response != null) {
+				if (!response.getStatus().equals("OK")) {
+					Thread.sleep(2000);
+				} else {
 					lock = false;
 				}
 			}
@@ -91,8 +93,8 @@ public class Utilities {
 		InputStream configFile = null;
 		try {
 			Properties prop = new Properties();
-			//configFile = new FileInputStream("//Users//Argos//Desktop//darkSkyApiKey.properties");
-			 configFile = new FileInputStream("//var//darkSkyApiKey.properties");
+		    //configFile = new FileInputStream("//Users//Argos//Desktop//darkSkyApiKey.properties");
+			configFile = new FileInputStream("//var//darkSkyApiKey.properties");
 			if (configFile != null) {
 				prop.load(configFile);
 			} else {
